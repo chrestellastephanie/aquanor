@@ -28,6 +28,9 @@ general
 	.center{
 		text-align: center;
 	}
+	.display-inline{
+		display: inline !important;
+	}
 	.image--inline{
 		display: inline;
 	}
@@ -47,6 +50,24 @@ general
 		margin-right: auto;
 	}
 
+/*
+bootstrap overide
+*/
+	.navbar{
+		border:none;
+		margin-bottom: 0px;
+	}
+	.navbar-nav{
+		margin: 0px;
+	}
+	.navbar-toggle{
+		margin-top: 20px;
+		border: solid #01A5EE 2px;
+		/*content: "lala";*/
+	}
+	.navbar-toggle .icon-bar {
+	    background-color: #01A5EE;
+	}
 /*
 header
 */
@@ -288,13 +309,21 @@ footer
 		text-align: center;
 	}
 
-
-	/*logo kalo kecil ga adaa */
-	/*gambarnya kalo di klik keluar modal*/
-
 /*
 modal
 */
 	.modal-content img{
 		width: 100%;
 	}
+
+/*
+media
+*/
+	 @media (max-width: 767px) {
+		.header-menu li{
+			padding-top: 5px;
+			padding-bottom: 10px;
+		}
+
+	 }
+
