@@ -490,68 +490,63 @@
 	});
 </script>
 <script type="text/javascript">
-	$('.anchor-intro').click(function(){
-		$('.anchor-intro').addClass('active');
-		$('.anchor-products').removeClass('active');
-		$('.anchor-benefit').removeClass('active');
-		$('.anchor-client').removeClass('active');
-	});
-	$('.anchor-products').click(function(){
-		$('.anchor-intro').removeClass('active');
-		$('.anchor-products').addClass('active');
-		$('.anchor-benefit').removeClass('active');
-		$('.anchor-client').removeClass('active');
-	});
-	$('.anchor-benefit').click(function(){
-		$('.anchor-intro').removeClass('active');
-		$('.anchor-products').removeClass('active');
-		$('.anchor-benefit').addClass('active');
-		$('.anchor-client').removeClass('active');
-	});
-	$('.anchor-client').click(function(){
-		$('.anchor-intro').removeClass('active');
-		$('.anchor-products').removeClass('active');
-		$('.anchor-benefit').removeClass('active');
-		$('.anchor-client').addClass('active');
-	});
+	// $('.anchor-intro').click(function(){
+	// 	$('.anchor-intro').addClass('active');
+	// 	$('.anchor-products').removeClass('active');
+	// 	$('.anchor-benefit').removeClass('active');
+	// 	$('.anchor-client').removeClass('active');
+	// });
+	// $('.anchor-products').click(function(){
+	// 	$('.anchor-intro').removeClass('active');
+	// 	$('.anchor-products').addClass('active');
+	// 	$('.anchor-benefit').removeClass('active');
+	// 	$('.anchor-client').removeClass('active');
+	// });
+	// $('.anchor-benefit').click(function(){
+	// 	$('.anchor-intro').removeClass('active');
+	// 	$('.anchor-products').removeClass('active');
+	// 	$('.anchor-benefit').addClass('active');
+	// 	$('.anchor-client').removeClass('active');
+	// });
+	// $('.anchor-client').click(function(){
+	// 	$('.anchor-intro').removeClass('active');
+	// 	$('.anchor-products').removeClass('active');
+	// 	$('.anchor-benefit').removeClass('active');
+	// 	$('.anchor-client').addClass('active');
+	// });
 </script>
 <script type="text/javascript">
-	// $(document).scroll(function () {
-	// 	var posY = $(this).scrollTop();
-	// 	var intro = $('#intro').position().top;
-	// 	var produk = $('#products').position().top;
-	// 	var benefit = $('#benefit').position().top;
-	// 	var client = $('#client').position().top;
-	// 	if(0 <= posY < intro-1){
-	// 		$('.anchor-intro').addClass('active');
-	// 		$('.anchor-products').removeClass('active');
-	// 		$('.anchor-benefit').removeClass('active');
-	// 		$('.anchor-client').removeClass('active');
-	// 	}
-	// 	else if(intro <= posY < produk-1){
-	// 		$('.anchor-intro').addClass('active');
-	// 		$('.anchor-products').removeClass('active');
-	// 		$('.anchor-benefit').removeClass('active');
-	// 		$('.anchor-client').removeClass('active');
-	// 	}
-	// 	else if(produk <= posY < benefit-1){
-	// 		$('.anchor-intro').removeClass('active');
-	// 		$('.anchor-products').addClass('active');
-	// 		$('.anchor-benefit').removeClass('active');
-	// 		$('.anchor-client').removeClass('active');
-	// 	}
-	// 	else if(benefit <= posY < client-1){
-	// 		$('.anchor-intro').removeClass('active');
-	// 		$('.anchor-products').removeClass('active');
-	// 		$('.anchor-benefit').addClass('active');
-	// 		$('.anchor-client').removeClass('active');
-	// 	}
-	// 	else{
-	// 		$('.anchor-intro').removeClass('active');
-	// 		$('.anchor-products').removeClass('active');
-	// 		$('.anchor-benefit').removeClass('active');
-	// 		$('.anchor-client').addClass('active');
-	// 	}
-	// }
+	$(document).scroll(function () {
+		var posY = $(this).scrollTop();
+		var intro = $('#intro').position().top;
+		var produk = $('#products').position().top;
+		var benefit = $('#benefit').position().top;
+		var client = $('#client').position().top;
+		if(posY >= intro && posY < produk){
+			$('.anchor-intro').addClass('active');
+			$('.anchor-products').removeClass('active');
+			$('.anchor-benefit').removeClass('active');
+			$('.anchor-client').removeClass('active');
+		}
+		else if(posY >= produk && posY < benefit){
+			$('.anchor-intro').removeClass('active');
+			$('.anchor-products').addClass('active');
+			$('.anchor-benefit').removeClass('active');
+			$('.anchor-client').removeClass('active');
+			// alert(posY);
+		}
+		else if(posY >= benefit && posY < client){
+			$('.anchor-intro').removeClass('active');
+			$('.anchor-products').removeClass('active');
+			$('.anchor-benefit').addClass('active');
+			$('.anchor-client').removeClass('active');
+		}
+		else if(posY >= client){
+			$('.anchor-intro').removeClass('active');
+			$('.anchor-products').removeClass('active');
+			$('.anchor-benefit').removeClass('active');
+			$('.anchor-client').addClass('active');
+		}
+	});
 </script>
 </html>
