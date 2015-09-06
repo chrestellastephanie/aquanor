@@ -281,6 +281,7 @@ client
 	}
 	.client-logo{
 		width: 80%;
+		float: right;
 	}
 	.client-logo .row{
 		/*margin-top: 10px;*/
