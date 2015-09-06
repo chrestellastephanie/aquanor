@@ -4,6 +4,7 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
 	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="header">
@@ -17,10 +18,10 @@
 					<div class="pull-right">
 						<div class="header-menu">
 							<ul>
-								<a href="#intro"><li class="active">Tentang Kami</li></a>
-								<a href="#products"><li>Produk dan Jasa</li></a>
-								<a href="#benefit"><li>Keunggulan</li></a>
-								<a href="#client"><li>Portofolio</li></a>
+								<a href="#intro"><li class="anchor-intro active">Tentang Kami</li></a>
+								<a href="#products"><li class="anchor-products">Produk dan Jasa</li></a>
+								<a href="#benefit"><li class="anchor-benefit">Keunggulan</li></a>
+								<a href="#client"><li class="anchor-client">Portofolio</li></a>
 							</ul>
 						</div>
 					</div>
@@ -53,19 +54,19 @@
 			</div>
 			<div class="service-item">
 				<div class="row">
-					<div class="col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<img src="images/misi2.png">
 						Menghasilkan produk dan sistem pengolahan air dan limbah yang berkualitas
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<img src="images/misi2.png">
 						Membantu memecahkan permasalahan pengolahan air dan limbah secara efisien dan efektif
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<img src="images/misi3.png">
 						Melakukan semua tahapan pekerjaan secara tepat waktu
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-6 col-sm-3">
 						<img src="images/misi4.png">
 						Siap membantu klien dalam penanganan pelayanan purna jual
 					</div>
@@ -78,26 +79,40 @@
 			<div class="row">
 				<div class="col-sm-9 no-padding">
 					<div class="col-sm-4 no-padding">
-						<img src="images/image011.jpg">
+						<a href="" data-toggle="modal" data-target="#pic-1">
+							<img src="images/image011.jpg">
+						</a>
 					</div>
 					<div class="col-sm-4 no-padding">
-						<img src="images/image009.jpg">
+						<a href="" data-toggle="modal" data-target="#pic-2">
+							<img src="images/image009.jpg">
+						</a>
 					</div>
 					<div class="col-sm-4 no-padding">
-						<img src="images/image003.jpg">
+						<a href="" data-toggle="modal" data-target="#pic-3">
+							<img src="images/image003.jpg">
+						</a>
 					</div>
 					<div class="col-sm-4 no-padding">
-						<img src="images/image020.jpg">
+						<a href="" data-toggle="modal" data-target="#pic-4">
+							<img src="images/image020.jpg">
+						</a>
 					</div>
 					<div class="col-sm-4 no-padding">
-						<img src="images/image045.jpg">
+						<a href="" data-toggle="modal" data-target="#pic-5">
+							<img src="images/image045.jpg">
+						</a>
 					</div>
 					<div class="col-sm-4 no-padding">
-						<img src="images/image049.jpg">
+						<a href="" data-toggle="modal" data-target="#pic-6">
+							<img src="images/image049.jpg">
+						</a>
 					</div>
 				</div>
 				<div class="col-sm-3 no-padding full-height-image">
-					<img src="images/image047.jpg">
+					<a href="" data-toggle="modal" data-target="#pic-7">
+						<img src="images/image047.jpg">
+					</a>
 				</div>
 			</div>
 		</div>
@@ -247,7 +262,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-sm-6">
+				<div class="col-sm-6 hidden-xs">
 					<div class="client-logo pull-right">
 						<div class="row">
 							<div class="col-sm-6">
@@ -299,8 +314,8 @@
 			<div class="row">
 				<div class="col-sm-4">
 					<div class="footer-logo">
-						<img src="images/aset.png">
-						<img src="images/tagline.png">
+						<img class="image-logo" src="images/aset.png">
+						<img class="image-tagline" src="images/tagline.png">
 					</div>
 				</div>
 				<div class="col-sm-4">
@@ -318,25 +333,108 @@
 					<br><br><br>
 					Branch Office <br>
 					<div class="opensans">
-						Jl. Ciputat Raya No. 14C
-						Pondok Pinang, Kebayoran Lama, Jakarta Selatan 12310
-						Ph / Fax : 021-75906704
-						magnaaquatechindo@yahoo.com
+						Jl. Tukad Badung 17 No. 7
+						Denpasar, Bali 80226
+						Ph / Fax : 0361 - 4742222
+						magnaaquatechindo.bali@yahoo.com
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+<!-- Modal -->
+<div id="pic-1" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/image011.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pic-2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/image009.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pic-3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/image003.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pic-4" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/image020.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pic-5" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/image045.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pic-6" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/image049.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="pic-7" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="images/image047.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 <script type="text/javascript">
 	$(window).load(function(){
-		var rowHeight= $('.full-height-image').parent().parent().parent().outerHeight();
-		$('.full-height-image').find('img').css('height',rowHeight);
+		if($(window).width()>768){
+			var rowHeight= $('.full-height-image').parent().parent().parent().outerHeight();
+			$('.full-height-image').find('img').css('height',rowHeight);
+		}
 	});
-	// $(window).resize(function(){
-	// 	var rowHeight= $('.full-height-image').parent().parent().parent().outerHeight();
-	// 	$('.full-height-image').find('img').css('height',rowHeight);
-	// });
+	$(window).resize(function(){
+		if($(window).width()>768){
+			var rowHeight= $('.full-height-image').parent().parent().parent().outerHeight();
+			$('.full-height-image').find('img').css('height',rowHeight);
+		}
+	});
 </script>
 <script>
 	$(function() {
@@ -353,5 +451,70 @@
 	    }
 	  });
 	});
+</script>
+<script type="text/javascript">
+	$('.anchor-intro').click(function(){
+		$('.anchor-intro').addClass('active');
+		$('.anchor-products').removeClass('active');
+		$('.anchor-benefit').removeClass('active');
+		$('.anchor-client').removeClass('active');
+	});
+	$('.anchor-products').click(function(){
+		$('.anchor-intro').removeClass('active');
+		$('.anchor-products').addClass('active');
+		$('.anchor-benefit').removeClass('active');
+		$('.anchor-client').removeClass('active');
+	});
+	$('.anchor-benefit').click(function(){
+		$('.anchor-intro').removeClass('active');
+		$('.anchor-products').removeClass('active');
+		$('.anchor-benefit').addClass('active');
+		$('.anchor-client').removeClass('active');
+	});
+	$('.anchor-client').click(function(){
+		$('.anchor-intro').removeClass('active');
+		$('.anchor-products').removeClass('active');
+		$('.anchor-benefit').removeClass('active');
+		$('.anchor-client').addClass('active');
+	});
+</script>
+<script type="text/javascript">
+	// $(document).scroll(function () {
+	// 	var posY = $(this).scrollTop();
+	// 	var intro = $('#intro').position().top;
+	// 	var produk = $('#products').position().top;
+	// 	var benefit = $('#benefit').position().top;
+	// 	var client = $('#client').position().top;
+	// 	if(0 <= posY < intro-1){
+	// 		$('.anchor-intro').addClass('active');
+	// 		$('.anchor-products').removeClass('active');
+	// 		$('.anchor-benefit').removeClass('active');
+	// 		$('.anchor-client').removeClass('active');
+	// 	}
+	// 	else if(intro <= posY < produk-1){
+	// 		$('.anchor-intro').addClass('active');
+	// 		$('.anchor-products').removeClass('active');
+	// 		$('.anchor-benefit').removeClass('active');
+	// 		$('.anchor-client').removeClass('active');
+	// 	}
+	// 	else if(produk <= posY < benefit-1){
+	// 		$('.anchor-intro').removeClass('active');
+	// 		$('.anchor-products').addClass('active');
+	// 		$('.anchor-benefit').removeClass('active');
+	// 		$('.anchor-client').removeClass('active');
+	// 	}
+	// 	else if(benefit <= posY < client-1){
+	// 		$('.anchor-intro').removeClass('active');
+	// 		$('.anchor-products').removeClass('active');
+	// 		$('.anchor-benefit').addClass('active');
+	// 		$('.anchor-client').removeClass('active');
+	// 	}
+	// 	else{
+	// 		$('.anchor-intro').removeClass('active');
+	// 		$('.anchor-products').removeClass('active');
+	// 		$('.anchor-benefit').removeClass('active');
+	// 		$('.anchor-client').addClass('active');
+	// 	}
+	// }
 </script>
 </html>
