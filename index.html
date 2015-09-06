@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width," >
+	<meta charset="UTF-8">
 	<title>AquaNor</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="css/style.css"/>
@@ -21,10 +24,10 @@
 			        <span class="icon-bar"></span>
 			      </button>
 			      <a href="#intro">
-				      <img class="image--inline logo-image" src="images/aset.png">
+				      <img class="image--inline logo-image" src="images/aset.png" alt="tagline">
 					  <div class="display-inline">
 					  	<img class="image--inline tagline-image" src="
-					  	images/tagline.png">
+					  	images/tagline.png" alt="tagline">
 					  </div>
 				  </a>
 			    </div>
@@ -86,19 +89,19 @@
 			<div class="service-item">
 				<div class="row">
 					<div class="col-xs-6 col-sm-3">
-						<img src="images/misi1.png">
+						<img src="images/misi1.png" alt="misi">
 						Menghasilkan produk dan sistem pengolahan air dan limbah yang berkualitas
 					</div>
 					<div class="col-xs-6 col-sm-3">
-						<img src="images/misi2.png">
+						<img src="images/misi2.png" alt="misi">
 						Membantu memecahkan permasalahan pengolahan air dan limbah secara efisien dan efektif
 					</div>
 					<div class="col-xs-6 col-sm-3">
-						<img src="images/misi3.png">
+						<img src="images/misi3.png" alt="misi">
 						Melakukan semua tahapan pekerjaan secara tepat waktu
 					</div>
 					<div class="col-xs-6 col-sm-3">
-						<img src="images/misi4.png">
+						<img src="images/misi4.png" alt="misi">
 						Siap membantu klien dalam penanganan pelayanan purna jual
 					</div>
 				</div>
@@ -461,6 +464,11 @@
 		}else{
 			$('.tagline-image').css('display','none');
 		}
+		if($(window).width()<1025){
+			$('.tagline-image').css('display','none');
+		}else{
+			$('.tagline-image').css('display','inline');
+		}
 	});
 	$(window).resize(function(){
 		if($(window).width()>768){
@@ -471,6 +479,12 @@
 
 		}else{
 			$('.tagline-image').css('display','none');			
+		}
+
+		if($(window).width()<1025){
+			$('.tagline-image').css('display','none');
+		}else{
+			$('.tagline-image').css('display','inline');
 		}
 	});
 </script>
