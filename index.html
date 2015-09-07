@@ -535,9 +535,9 @@
 	$(document).scroll(function () {
 		var posY = $(this).scrollTop();
 		var intro = $('#intro').position().top;
-		var produk = $('#products').position().top;
-		var benefit = $('#benefit').position().top;
-		var client = $('#client').position().top;
+		var produk = $('#products').position().top-2;
+		var benefit = $('#benefit').position().top-2;
+		var client = $('#client').position().top-2;
 		if(posY >= intro && posY < produk){
 			$('.anchor-intro').addClass('active');
 			$('.anchor-products').removeClass('active');
