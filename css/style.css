@@ -18,6 +18,7 @@ general
 	}
 	a:hover{
 		color: #425D70;
+		text-decoration: none;
 	}
 	.opensans{
 		font-family: 'Open Sans', sans-serif;
@@ -88,6 +89,7 @@ header
 	.tagline-image{
 		max-height: 13px;
 		margin-left: 15px;
+		display: none;
 	}
 	.header-menu ul{
 		list-style: none;
@@ -324,6 +326,11 @@ media
 		.header-menu li{
 			padding-top: 5px;
 			padding-bottom: 10px;
+			display: block;
+		}
+		.header-menu li.active{
+			border-bottom: none;
+			border-left: solid #00AEF9 5px;
 		}
 
 	 }
