@@ -15,9 +15,13 @@ general
 	}
 	a{
 		color: inherit;
+		text-decoration: none;
 	}
 	a:hover{
 		color: #425D70;
+		text-decoration: none;
+	}
+	a:selected{
 		text-decoration: none;
 	}
 	.opensans{
@@ -162,7 +166,7 @@ service
 		position: relative;
 		margin-left: auto;
 		margin-right: auto;
-		width: 60%;
+		width: 70%;
 		display: block;
 	}
 /*
@@ -204,7 +208,9 @@ products
 	.products-subtitle{
 		font-family: 'Open Sans', sans-serif;
 		text-align: center;
-		font-size: 23px;
+		font-size: 18px;
+		font-weight: bold;
+		/*margin-top: 30px;*/
 		margin-bottom: 30px;
 	}
 	.products-subtitle span{
@@ -238,7 +244,7 @@ benefit
 		font-family: 'Open Sans', sans-serif;
 	}
 	.benefit-item img{
-		width: 70%;
+		width: 50%;
 		margin-left: auto;
 		margin-right: auto;
 		position: relative;
@@ -253,7 +259,8 @@ benefit
 		border-radius: 15px;
 		margin-right: auto;
 		margin-left: auto;
-		font-size: 20px;
+		font-size: 18px;
+		font-weight: bold;
 	}
 	.benefit-subtitle span{
 		padding: 5px;
@@ -273,7 +280,8 @@ client
 		margin-bottom: 15px;
 	}
 	.client-product{
-		font-size: 15px;
+		font-size: 18px;
+		font-weight: bold;
 	}
 	.client-list ul{
 		list-style: none;
@@ -301,6 +309,10 @@ footer
 		color: white;
 		font-size: 13px;
 	}
+	.footer-subtitle{
+		font-size: 16px;
+		font-weight: bold;
+	}
 	.footer-logo .image-logo{
 		margin-top: 40px;
 		width: 60%;
@@ -318,7 +330,20 @@ modal
 	.modal-content img{
 		width: 100%;
 	}
-
+	.modal-close{
+		position: relative;
+		/*top:1px;*/
+		right: 5px;
+		font-size: 20px;
+		float: right;
+		font-weight: bold;
+		font-family: 'Open Sans', sans-serif;
+		z-index: 20;
+		color: #999999;
+	}
+	.modal-dialog{
+		min-width: 60%;
+	}
 /*
 media
 */
@@ -332,6 +357,13 @@ media
 			border-bottom: none;
 			border-left: solid #00AEF9 5px;
 		}
-
+		.footer-logo .image-logo{
+			margin-right: auto;
+			margin-left: auto;
+			margin-bottom: 30px;
+		}
+		.products-subtitle{
+			margin-top: 45px;
+		}
 	 }
 
